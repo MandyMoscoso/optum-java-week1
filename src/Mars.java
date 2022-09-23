@@ -19,7 +19,8 @@ public class Mars {
          }
 
          landing = landingCheck(10);
-
+         new GuessingGame();
+        new MarsExpedition();
     }
     public static double foodRemain(int days){
         for(int i = 0; i < days; i ++){
@@ -40,7 +41,7 @@ public class Mars {
                 System.out.println("Calculating");
             };
             try {
-                Thread.sleep(250);
+                Thread.sleep(1);
             } catch (InterruptedException ignored) {
 
             }
@@ -48,4 +49,5 @@ public class Mars {
         System.out.println("landed");
         return false;
     }
+   
 }
